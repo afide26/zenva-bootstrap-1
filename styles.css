@@ -4,7 +4,7 @@ body {
   width: 100%;
   height: 100%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 html {
@@ -43,6 +43,75 @@ a:hover {
   color: cadetblue;
 }
 
+/* Masthead */
+.masthead {
+  background: url('./img/intro-bg.jpg') no-repeat bottom center scroll;
+  background-color: #000;
+  background-size: cover;
+  color: #fff;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.masthead .intro-body .brand-heading {
+  font-size: 50px;
+}
+
+.masthead .intro-body .intro-text {
+  font-size: 1.125rem;
+}
+
+.text-drop {
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.tag-line {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-family: 'Cabin', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.display-1 {
+  font-size: 1.5em;
+}
+
+.btn-circle {
+  color: white;
+  font-size: calc(2rem-6px);
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 100% !important;
+  background: transparent;
+}
+
+.btn-circle:focus,
+.btn-circle:hover {
+  color: #fff;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+button.navbar-toggler-right.navbar-toggler-right {
+  outline: none;
+}
+
+
+
+
 /* Media Queries */
 @media only screen and (min-width:768px) {
   p {
@@ -50,9 +119,12 @@ a:hover {
     line-height: 1.6;
     margin: 0 0 35px;
   }
-}
 
+  .masthead .intro-body .brand-heading {
+    font-size: 100px;
+  }
 
-button.navbar-toggler-right.navbar-toggler-right {
-  outline: none;
+  .masthead .intro-body .intro-text {
+    font-size: 1.5rem;
+  }
 }
