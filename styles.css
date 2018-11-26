@@ -110,10 +110,103 @@ button.navbar-toggler-right.navbar-toggler-right {
 }
 
 
+#mainNav {
+  background-color: transparent;
+  color: #000;
+  font-family: 'Cabin', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
 
+#mainNav .navbar-toggler {
+  border: 1px solid #fff;
+  font-size: .875rem;
+  padding: 11px;
+  color: #fff;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: #fff;
+}
+
+#mainNav .navbar-nav .nav-item {
+  transition: background-color ease-in-out 0.3s;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.content-section {
+  padding: 150px 0;
+}
+
+.doc-section {
+  color: #FFF;
+  background: url('./img/downloads-bg.jpg') no-repeat center center scroll;
+  background-color: #FFF;
+  background-size: cover;
+}
+
+.btn {
+  font-family: 'Cabin', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
 
 /* Media Queries */
+@media only screen and(min-width:992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background-color 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #000;
+  }
+
+  #mainNav .nav-link:active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  #mainNav .nav-link:hover {
+    color: #FFF;
+  }
+
+  .content-section {
+    padding-top: 100px 0;
+  }
+}
+
 @media only screen and (min-width:768px) {
+  .masthead {
+    height: 100%;
+    padding: 0%;
+  }
+
   p {
     font-size: 1.1rem;
     line-height: 1.6;
