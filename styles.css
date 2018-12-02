@@ -191,6 +191,19 @@ button.navbar-toggler-right.navbar-toggler-right {
   text-align: center;
 }
 
+footer {
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-logo {
+  width: 25%
+}
+
 /* Media Queries */
 @media only screen and(min-width:992px) {
   #mainNav {
