@@ -169,6 +169,12 @@ button.navbar-toggler-right.navbar-toggler-right {
   border-radius: 0;
 }
 
+.horse-section {
+  background: url('./img/downloads-bg.jpg') no-repeat center center;
+  background-color: red;
+  background-size: cover;
+}
+
 /* Media Queries */
 @media only screen and(min-width:992px) {
   #mainNav {
