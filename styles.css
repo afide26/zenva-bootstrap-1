@@ -175,6 +175,22 @@ button.navbar-toggler-right.navbar-toggler-right {
   background-size: cover;
 }
 
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+.bg-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-info>h3 {
+  text-align: center;
+}
+
 /* Media Queries */
 @media only screen and(min-width:992px) {
   #mainNav {
@@ -205,6 +221,10 @@ button.navbar-toggler-right.navbar-toggler-right {
   .content-section {
     padding-top: 100px 0;
   }
+
+  #map {
+    height: 350px;
+  }
 }
 
 @media only screen and (min-width:768px) {
@@ -225,5 +245,12 @@ button.navbar-toggler-right.navbar-toggler-right {
 
   .masthead .intro-body .intro-text {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .bg-info>h3 {
+    font-size: 15px;
+    text-transform: none;
   }
 }
