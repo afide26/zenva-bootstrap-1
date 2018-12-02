@@ -204,6 +204,17 @@ footer p {
   width: 25%
 }
 
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
 /* Media Queries */
 @media only screen and(min-width:992px) {
   #mainNav {
